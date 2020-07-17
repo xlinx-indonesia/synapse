@@ -191,7 +191,7 @@ class BulkPushRuleEvaluator(object):
                     actions = [x for x in rule["actions"] if x != "dont_notify"]
                     logger.info(
                         "Applying rule %s with actions %s for user %s on event %s",
-                        rule["id"],
+                        rule["rule_id"],
                         actions,
                         uid,
                         event.event_id,
